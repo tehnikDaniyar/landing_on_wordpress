@@ -11,26 +11,38 @@ Template Name: home
 					<div class="top__slider">
 						<!-- Slider main container -->
 						<div class="swiper">
-							<h1 class="top__title title">Монтаж охранных систем</h1>
+							<h1 class="top__title title"><?php the_field('main_title'); ?></h1>
 
 							<!-- Additional required wrapper -->
 							<div class="swiper-wrapper">
-								<!-- Slides -->
-								<div class="swiper-slide _ibg">
-									<h2 class="swiper-slide__title">видеонаблюдения</h2>
-									<img src="<?php bloginfo('template_url'); ?>/assets/img/top/InstallVideo.jpg" data-src="<?php bloginfo('template_url'); ?>/assets/img/top/Install Video.webp"
-										alt="Установка видеонаблюдения">
-								</div>
-								<div class="swiper-slide _ibg">
-									<h2 class="swiper-slide__title">сигнализации</h2>
-									<img src="<?php bloginfo('template_url'); ?>/assets/img/top/installAllarmSystem.jpg" data-src="<?php bloginfo('template_url'); ?>/assets/img/top/install AllarmSystem.webp"
-										alt="Установка видеонаблюдения">
-								</div>
-								<div class="swiper-slide _ibg">
-									<h2 class="swiper-slide__title">СКУД</h2>
-									<img src="<?php bloginfo('template_url'); ?>/assets/img/top/installAccesControl.jpg" data-src="<?php bloginfo('template_url'); ?>/assets/img/top/install AccesControl.webp"
-										alt="Установка СКУД">
-								</div>
+								<?php
+										global $post;
+
+										$myposts = get_posts([ 
+											'numberposts' => -1,
+											// 'offset'      => 1,
+											'category'    => 2
+										]);
+
+										if( $myposts ){
+											foreach( $myposts as $post ){
+												setup_postdata( $post );
+												?>
+												
+												<div class="swiper-slide _ibg">
+													<h2 class="swiper-slide__title"><?php the_title(); ?></h2>
+													<?php the_post_thumbnail(); ?>
+												</div>
+
+
+												<?php 
+											}
+										} else {
+											// Постов не найдено
+										}
+
+										wp_reset_postdata(); // Сбрасываем $post
+									?>
 							</div>
 							<div class="swiper-scrollbar"></div>
 						</div>

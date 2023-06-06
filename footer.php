@@ -16,30 +16,30 @@
 
 					<div class="contacts__item">
 						<a href="www.facebook.com" class="contacts__link"><img class="contacts__icon"
-								src="./img/footer/facebook.svg" alt="facebook"><span>facebook</span></a>
+								src="<?php bloginfo('template_url'); ?>/assets/img/footer/facebook.svg" alt="facebook"><span>facebook</span></a>
 					</div>
 					<div class="contacts__item">
 						<a href="www.instagram.com" class="contacts__link"><img class="contacts__icon"
-								src="./img/footer/instagram.svg" alt="instagram"><span>instagram</span></a>
+								src="<?php bloginfo('template_url'); ?>/assets/img/footer/instagram.svg" alt="instagram"><span>instagram</span></a>
 					</div>
 					<div class="contacts__item">
 						<a href="www.whatsapp.com" class="contacts__link"><img class="contacts__icon"
-								src="./img/footer/whatsapp.png" alt="whatsapp">whatsapp</a>
+								src="<?php bloginfo('template_url'); ?>/assets/img/footer/whatsapp.png" alt="whatsapp">whatsapp</a>
 					</div>
 				</div>
 				<div class="contacts__phones">
 					<h3 class="contacts__title">Контакты</h3>
 					<div class="contacts__item">
 						<a href="tel:0505006019" class="contacts__link"><img class="contacts__icon"
-								src="./img/footer/megacom.png" alt="megacom"><span>0555006019</span></a>
+								src="<?php bloginfo('template_url'); ?>/assets/img/footer/megacom.png" alt="megacom"><span>0555006019</span></a>
 					</div>
 					<div class="contacts__item">
-						<a href="tel:0555006019" class="contacts__link"><img class="contacts__icon" src="./img/footer/O!.svg"
+						<a href="tel:0555006019" class="contacts__link"><img class="contacts__icon" src="<?php bloginfo('template_url'); ?>/assets/img/footer/O!.svg"
 								alt="O"><span>0505006019</span></a>
 					</div>
 					<div class="contacts__item">
 						<a href="tel:0770006019" class="contacts__link"><img class="contacts__icon"
-								src="./img/footer/beeline.svg" alt="beeline"><span>0770006019</span></a>
+								src="<?php bloginfo('template_url'); ?>/assets/img/footer/beeline.svg" alt="beeline"><span>0770006019</span></a>
 					</div>
 				</div>
 			</div>
