@@ -1,0 +1,17 @@
+{
+	"camerasIndoor": 1800,
+	"camerasOutdoor": 2200,
+	"adaptor": 1200,
+	"hdd": 4500,
+	"connectors": 30,
+	"cable": 40,
+	"decore": 35,
+	"monitorSmall": 8000,
+	"monitorBig": 12000,
+	"dvr4ch": 5000,
+	"dvr8ch": 8000,
+	"dvr16ch": 12000,
+	"dvr32ch": 16000,
+	"metithes": 3000,
+	"works": 2500
+}

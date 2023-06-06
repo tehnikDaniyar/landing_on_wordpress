@@ -1,0 +1,143 @@
+/////////////////animation loader////////////////////////////
+
+		&::before {
+			content: "";
+			position: absolute;
+			width: 30px;
+			height: 30px;
+			border-radius: 50%;
+			border: 3px solid rgba(255, 255, 255, .1);
+			border-top: 3px solid rgba(255, 255, 255, 1);
+			top: 50%;
+			left: 50%;
+			animation: animate 1s infinite linear;
+		}
+
+		@keyframes animate {
+			0% {
+				transform: rotate(0deg);
+			}
+
+			100% {
+				transform: rotate(360deg);
+			}
+		}
+
+
+
+/////////////////how to get position of an element relative to the screen///////////////
+
+[element].getBoundingClientRect().[relative position];
+
+example:
+img.getBoundingClientRect().top;
+
+
+
+////////////////how to get height of the browser screen //////////////////////
+
+const windowHeight = document.documentElement.clientHeight;
+
+
+////////////////how to check if browser supports lazy loading////////////////////
+
+	if ('loading' in HTMLImageElement.prototype) {
+	// supported in browser
+	} else {
+
+	};
+
+
+////////////////css code for animation popup (only css)/////////////////////////
+
+.popup {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.8);
+	top: 0;
+	left: 0;
+	opacity: 0;
+	visibility: hidden;
+	overflow-y: auto;
+	overflow-x: hidden;
+	transition: all 0.8s ease 0s;
+}
+
+.popup:target {
+	opacity: 1;
+	visibility: visible;
+}
+
+.popup:target .popup__content {
+	opacity: 1;
+	transform: perspective(600px) translate(0, 0) rotateX(0deg);
+}
+
+.popup__area {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.popup__body {
+	min-height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 30px 10px;
+}
+
+.popup__content {
+	background-color: #fff;
+	max-width: 50%;
+	color: black;
+	padding: 30px;
+	position: relative;
+	transform: perspective(600px) translate(0, -100%) rotateX(45deg);
+	opacity: 0;
+	transition: all 0.8s ease 0s;
+}
+
+.popup__close {
+	position: absolute;
+	top: 10px;
+	right: 20px;
+	font-size: 24px;
+	color: black;
+}
+
+//==========whatcing viewport size========================
+
+const matchMedia = window.matchMedia([media query]);
+
+matchMedia.addListener(callback);
+
+function callback() {
+	if (matchMedia.matches) {
+		//code
+	}
+};
+
+
+//========Intersection observer===========
+const observer = new IntersectionObserver(callback, options);
+
+const callback = function (entries, observer) {
+
+	entries.forEach(entry => {
+		const { target, isIntersecting, intersectionRatio } = entry;
+
+		if (isIntersecting) {
+			
+		};
+	});
+};
+
+
+const options = {
+	threshold: 0,
+	rootMargin: "-150px 0px 0px 0px"
+};

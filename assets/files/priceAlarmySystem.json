@@ -1,0 +1,13 @@
+{
+	"motionSensor": 900,
+	"glassBreackSensor": 1200,
+	"openSensor": 150,
+	"cable": 15,
+	"decore": 25,
+	"reservePower": 2500,
+	"accumulator": 1500,
+	"controlPanel": 13000,
+	"siren": 500,
+	"tmKeys": 600,
+	"works": 0.5
+}
