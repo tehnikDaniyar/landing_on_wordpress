@@ -298,7 +298,7 @@ Template Name: home
 				<div class="gallery__body">
 					<div class="gallery__item">
 						<div class="gallery__image _ibg">
-							<picture><source srcset="<?php bloginfo('template_url'); ?>/assets/img/gallery/01.webp" type="image/webp"><img src="<?php bloginfo('template_url'); ?>/assets/img/gallery/01.jpg" alt="work"></picture>
+							<picture><source srcset="<?php the_field('first_img_webp'); ?>" type="image/webp"><img src="<?php the_field('first_img_jpg'); ?>" alt="work"></picture>
 						</div>
 					</div>
 					<div class="gallery__item">
