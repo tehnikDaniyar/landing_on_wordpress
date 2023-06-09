@@ -57,65 +57,19 @@ Template Name: home
 							<div class="item-services__icon _ibg">
 								<picture><source srcset="<?php bloginfo('template_url'); ?>/assets/img/services/video.webp" type="image/webp"><img src="<?php bloginfo('template_url'); ?>/assets/img/services/video.jpg" alt="иконка видеонаблюдение"></picture>
 							</div>
-							<div class="item-services__title">
-								<h3>Видеонаблюдение</h3>
-							</div>
-							<div class="item-services__options options-services">
-								<ul class="options-services__list">
-									<li class="options-services__item">Ночного видения dddd</li>
-									<li class="options-services__item">Удаленный доступ</li>
-									<li class="options-services__item">Ночного видения</li>
-									<li class="options-services__item">Удаленный доступ</li>
-									<li class="options-services__item">Ночного видения</li>
-									<li class="options-services__item">Удаленный доступ</li>
-								</ul>
-							</div>
-							<div class="item-services__description">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, cumque incidunt blanditiis sunt
-								illo, consectetur maxime alias amet saepe odio totam reprehenderit ab consequatur animi, velit
-								reiciendis eligendi ratione sed.
-							</div>
+							<?php the_field('service-video'); ?>
 						</div>
 						<div class="services__item item-services">
 							<div class="item-services__icon">
 								<picture><source srcset="<?php bloginfo('template_url'); ?>/assets/img/services/video.webp" type="image/webp"><img src="<?php bloginfo('template_url'); ?>/assets/img/services/video.jpg" alt="иконка видеонаблюдение"></picture>
 							</div>
-							<div class="item-services__title">
-								<h3>Видеонаблюдение</h3>
-							</div>
-							<div class="item-services__options options-services">
-								<ul class="options-services__list">
-									<li class="options-services__item">Ночного видения</li>
-									<li class="options-services__item">Удаленный доступ</li>
-									<li class="options-services__item">Ночного видения</li>
-								</ul>
-							</div>
-							<div class="item-services__description">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, cumque incidunt blanditiis sunt
-								illo, consectetur maxime alias amet saepe odio totam reprehenderit ab consequatur animi, velit
-								reiciendis eligendi ratione sed.
-							</div>
+									<?php the_field('service-alarmSystem'); ?>
 						</div>
 						<div class="services__item item-services">
 							<div class="item-services__icon">
 								<picture><source srcset="<?php bloginfo('template_url'); ?>/assets/img/services/video.webp" type="image/webp"><img src="<?php bloginfo('template_url'); ?>/assets/img/services/video.jpg" alt="иконка видеонаблюдение"></picture>
 							</div>
-							<div class="item-services__title">
-								<h3>Видеонаблюдение</h3>
-							</div>
-							<div class="item-services__options options-services">
-								<ul class="options-services__list">
-									<li class="options-services__item">Ночного видения</li>
-									<li class="options-services__item">Удаленный доступ</li>
-									<li class="options-services__item">Ночного видения</li>
-									<li class="options-services__item">Удаленный доступ</li>
-								</ul>
-							</div>
-							<div class="item-services__description">
-								Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, cumque incidunt blanditiis sunt
-								illo, consectetur maxime alias amet saepe odio totam reprehenderit ab consequatur animi, velit
-								reiciendis eligendi ratione sed.
-							</div>
+							<?php the_field('service-accesControl'); ?>
 						</div>
 					</div>
 				</div>
