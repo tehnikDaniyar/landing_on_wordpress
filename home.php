@@ -55,7 +55,7 @@ Template Name: home
 					<div class="services__body">
 						<div class="services__item item-services">
 							<div class="item-services__icon _ibg">
-								<picture><source srcset="<?php bloginfo('template_url'); ?>/assets/img/services/video.webp" type="image/webp"><img src="<?php bloginfo('template_url'); ?>/assets/img/services/video.jpg" alt="иконка видеонаблюдение"></picture>
+								<img src="<?php the_field('service-video-icon'); ?>" alt="иконка видеонаблюдение">
 							</div>
 							<?php the_field('service-video'); ?>
 						</div>
